@@ -1,0 +1,142 @@
+{
+  "$id": "list-gist-schema.json",
+  "title": "List Gists",
+  "type": "array",
+  "items": [
+    {
+      "title": "Gist A",
+      "properties": {
+        "url":  {
+          "$ref": "#/$defs/url"
+        },
+        "forks_url": {
+          "$ref": "#/$defs/forks_url"
+        },
+        "commits_url": {
+          "$ref": "#/$defs/commits_url"
+        },
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "node_id": {
+          "$ref": "#/$defs/node_id"
+        },
+        "git_pull_url": {
+          "$ref": "#/$defs/git_pull_url"
+        },
+        "git_push_url": {
+          "$ref": "#/$defs/git_push_url"
+        },
+        "html_url": {
+          "$ref": "#/$defs/html_url"
+        },
+        "files": {
+          "$ref": "#/$defs/files"
+        },
+        "public" : {
+          "$ref": "#/$defs/public"
+        },
+        "created_at": {
+          "$ref": "#/$defs/created_at"
+        },
+        "updated_at": {
+          "$ref": "#/$defs/updated_at"
+        },
+        "description": {
+          "$ref": "#/$defs/description"
+        },
+        "comments": {
+          "$ref": "#/$defs/comments"
+        },
+        "user": {
+          "$ref": "#/$defs/user"
+        },
+        "comments_url": {
+          "$ref": "#/$defs/comments_url"
+        },
+        "owner": {
+          "$ref": "#/$defs/owner"
+        },
+        "truncated": {
+          "$ref": "#/$defs/truncated"
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "url": {
+      "title": "gist url",
+      "type": ["string"]
+    },
+    "forks_url" : {
+      "title": "forks url",
+      "type": ["string"]
+    },
+    "commits_url": {
+      "title": "commits url",
+      "type": ["string"]
+    },
+    "id": {
+      "title": "gist id",
+      "type": ["string"]
+    },
+    "node_id": {
+      "title": "node id",
+      "type": ["string"]
+    },
+    "git_pull_url": {
+      "title": "git pull url",
+      "type": ["string"]
+    },
+    "git_push_url": {
+      "title": "git push url",
+      "type": ["string"]
+    },
+    "html_url": {
+      "title": "html url",
+      "type": ["string"]
+    },
+    "public": {
+      "title": "gist public value",
+      "type": ["boolean"]
+    },
+    "created_at": {
+      "title": "created at time",
+      "type": ["string"]
+    },
+    "updated_at": {
+      "title": "updated at time",
+      "type": ["string"]
+    },
+    "description": {
+      "title": "gist description",
+      "type": ["string"]
+    },
+    "comments" : {
+      "title": "number of comments",
+      "type": ["number"]
+    },
+    "user": {
+      "title": "user",
+      "type": ["string", "null"],
+      "default": null
+    },
+    "comments_url": {
+      "title": "comments url",
+      "type": ["string"]
+    },
+    "truncated" : {
+      "title": "number of comments",
+      "type": ["boolean"],
+      "default": false
+    },
+    "files": {
+      "title": "set of files",
+      "type": "object"
+    },
+    "owner": {
+      "title": "gist owner",
+      "type": "object"
+    }
+  }
+}
