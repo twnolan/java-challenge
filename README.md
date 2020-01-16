@@ -1,4 +1,4 @@
-# code-challenge
+# java-challenge
 
 Exercises Completed - 1 and 2
 
